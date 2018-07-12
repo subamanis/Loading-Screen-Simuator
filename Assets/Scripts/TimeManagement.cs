@@ -16,9 +16,9 @@ public class TimeManagement : MonoBehaviour {
     void Update() {
         timer += Time.deltaTime;
         time.GetComponent<Text>().text = "Time Played: " + timer.ToString("0.00");
-        if (timer >= x+5f/dividetime && flag<=10)
+        if (timer >= x+40f/dividetime && flag<=10)
         {
-            x += 5f/dividetime;
+            x += 40f/dividetime;
             greenBars[flag].SetActive(true);
             flag++;
         }
